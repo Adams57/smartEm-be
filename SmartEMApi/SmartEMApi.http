@@ -1,0 +1,6 @@
+@SmartEMApi_HostAddress = http://localhost:5077
+
+GET {{SmartEMApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
