@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35828.75 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEMApi", "SmartEMApi.csproj", "{4F322263-6DF1-413D-85D4-8DC7ECBEA191}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEMApi", ".\SmartEMApi\SmartEMApi.csproj", "{4F322263-6DF1-413D-85D4-8DC7ECBEA191}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEM.Domain", "..\SmartEM.Domain\SmartEM.Domain.csproj", "{3FC3318F-DDE3-4A5E-9076-72DA1FF59E79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEM.Domain", ".\SmartEM.Domain\SmartEM.Domain.csproj", "{3FC3318F-DDE3-4A5E-9076-72DA1FF59E79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEM.Application", "..\SmartEM.Application\SmartEM.Application.csproj", "{1B62061E-6D3D-48EF-A380-31FFD6B8AC08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEM.Application", ".\SmartEM.Application\SmartEM.Application.csproj", "{1B62061E-6D3D-48EF-A380-31FFD6B8AC08}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{03401756-014B-45D6-B321-75BECA9CFD98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEM.Infrastructure", "..\SmartEM.Infrastructure\SmartEM.Infrastructure.csproj", "{E519BA32-DD38-465A-9C85-1AFB4B80945E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEM.Infrastructure", ".\SmartEM.Infrastructure\SmartEM.Infrastructure.csproj", "{E519BA32-DD38-465A-9C85-1AFB4B80945E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEM.Persistence", "..\SmartEM.Persistence\SmartEM.Persistence.csproj", "{AECAE051-FAE4-45BA-B2EF-99A8ECDF9A9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEM.Persistence", ".\SmartEM.Persistence\SmartEM.Persistence.csproj", "{AECAE051-FAE4-45BA-B2EF-99A8ECDF9A9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
