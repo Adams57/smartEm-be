@@ -20,8 +20,18 @@ IRequestHandler<FetchUsersQuery, OperationResponse<PaginatedResponse<FetchUserDt
 
     public async Task<OperationResponse<PaginatedResponse<FetchUserDto>>> Handle(FetchUsersQuery request, CancellationToken cancellationToken)
     {
-        var paginatedUsers = await _unitOfWork.UserRepository.GetPaginatedFetchUserDto(request?.PaginatedRequest!);
-        return OperationResponse<PaginatedResponse<FetchUserDto>>.SuccessfulResponse(paginatedUsers);
+        var paginatedUsers = await _unitOfWork.UserRepository.GetAllAsync();
+        //return OperationResponse<PaginatedResponse<FetchUserDto>>.SuccessfulResponse(paginatedUsers);
+        var users = paginatedUsers.Select(x => new FetchUserDto
+        {
+            AccountType = x.AccountType.ToString(),
+            Email = x.Email,
+            FirstName = x.FirstName,
+            LastName = x.LastName,
+            Id = x.Id,
+        });
+        var response = new PaginatedResponse<FetchUserDto>(paginatedUsers.Count, users.ToList(), paginatedUsers.Count);
+        return OperationResponse<PaginatedResponse<FetchUserDto>>.SuccessfulResponse(response);
     }
 
     public async Task<OperationResponse<FetchUserDto>> Handle(FetchUserByIdQuery request, CancellationToken cancellationToken)

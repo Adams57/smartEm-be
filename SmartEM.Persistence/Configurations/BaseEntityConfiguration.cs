@@ -11,6 +11,6 @@ public class BaseEntityConfiguration<TEntity, TId>
     protected void ConfigureBase(EntityTypeBuilder<TEntity> builder)
     {
         builder.HasKey(b => b.Id);
-        builder.Property(b => b.SequentialId).UseSequence();
+        //builder.Property(b => b.SequentialId).UseSequence();
     }
 }

@@ -6,5 +6,5 @@ namespace SmartEM.Application.Contracts.Persistence.UserManagement;
 
 public interface IUserRepository : IPaginationService<User, Guid>
 {
-    Task<PaginatedResponse<FetchUserDto>> GetPaginatedFetchUserDto(PaginatedRequest paginatedRequest);
+    //Task<PaginatedResponse<FetchUserDto>> GetPaginatedFetchUserDto(PaginatedRequest paginatedRequest);
 }
